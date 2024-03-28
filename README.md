@@ -1,6 +1,16 @@
-# Layout
+# Wireless corne keyboard zmk configuration
 
-![Current layout](./my_keymap.svg)
+## Setup
+
+To always have the latest layout image run next command:
+
+```bash
+ln -s ../../git_hooks/pre-commit .git/hooks/pre-commit
+```
+
+## Layout
+
+![Current layout](./keymap-drawer-layout.svg)
 
 Layout may be generated using [this tool](https://github.com/caksoylar/keymap-drawer)
 or using [web version](https://keymap-drawer.streamlit.app)

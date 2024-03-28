@@ -1,0 +1,20 @@
+#!/bin/sh
+
+# Create python virtual environment.
+python -m venv venv
+
+# Activate the python virtual environment.
+# shellcheck source=/dev/null
+. venv/bin/activate
+
+# Install layout drawer.
+pip install keymap-drawer
+
+# Generate config keymap required to draw layout.
+keymap parse -c 12 -z config/corne.keymap >keymap-drawer-keymap.yaml
+
+# Draw layout.
+keymap draw keymap-drawer-keymap.yaml >keymap-drawer-layout.svg
+
+# Deactivate the python virtual environment.
+deactivate
