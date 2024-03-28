@@ -18,3 +18,6 @@ keymap draw keymap-drawer-keymap.yaml >keymap-drawer-layout.svg
 
 # Deactivate the python virtual environment.
 deactivate
+
+# Add image to commit
+git add keymap-drawer-layout.svg
